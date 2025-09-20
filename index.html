@@ -1,123 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta name="google-site-verification" content="xEWH1Ql-XJysU9QzvY-UYQ2lA7Weab94Scc4NZHzetM" />
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hosea Lifted | porfolio</title>
-  <meta name="description" content="Hosea Liftes — Frontend developer, animator, and cybersecurity enthusiast. Portfolio showing projects, resume, contact." />
-  <link rel="canonical" href="https://hosealifted.com/" />
-  <meta name="theme-color" content="#0b72ff"/>
-  <!-- Open Graph -->
-  <meta property="og:title" content="Hosea Liftes — Frontend Developer & Animator" />
-  <meta property="og:description" content="Frontend developer, animator, and cybersecurity enthusiast. View projects and contact." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourname.com/" />
-  <!-- favicon placeholder -->
-  <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#0b72ff;--muted:#9aa4b2;color-scheme:dark}
-    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,-apple-system,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071126 0%, #071323 100%);color:#e6eef6;line-height:1.5}
-    .wrap{max-width:980px;margin:32px auto;padding:24px}
-    header{display:flex;gap:16px;align-items:center}
-    .avatar{width:88px;height:88px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7cc7ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#041126}
-    h1{font-size:28px;margin:0}
-    .subtitle{color:var(--muted);margin-top:6px}
-    .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
-    .card{background:rgba(255,255,255,0.03);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
-    .project h3{margin:0 0 6px 0}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#021025;text-decoration:none;font-weight:600}
-    footer{margin-top:22px;color:var(--muted);font-size:14px}
-    @media (min-width:720px){.grid{grid-template-columns:320px 1fr}}
-  </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Hosea Lifted</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-  <!-- JSON-LD Person schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Hosea Liftes",
-    "url": "https://yourname.com/",
-    "sameAs": [
-      "https://www.linkedin.com/in/yourprofile",
-      "https://github.com/yourprofile"
-    ],
-    "jobTitle": "Frontend Developer & Animator",
-    "image": "https://yourname.com/avatar.jpg",
-    "description": "Frontend developer, animator, and cybersecurity enthusiast. Portfolio of web apps, animations and UI work."
-  }
-  </script>
-</head>
-<body>
-  <main class="wrap">
-    <header>
-      <div class="avatar" aria-hidden="true">HL</div>
-      <div>
-        <h1>Hosea Lifted</h1>
-        <div class="subtitle">web developer • Animator • Cybersecurity</div>
-        <div style="margin-top:8px">
-          <a class="btn" href="#projects">See projects</a>
-          <a class="btn" style="margin-left:8px" href="divine project.odt" download>Download Summary</a>
-        </div>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  </head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+            <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="award.html">Awards</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-tiktok"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
-    </header>
 
-    <section class="grid" style="margin-top:20px">
-      <aside class="card">
-        <h2 style="margin-top:0">About</h2>
-        <p>Hi — I build responsive web apps and create animations using OpenToonz and web animation tools. I also study cybersecurity and secure UI code.</p>
-        <h3 style="margin-top:12px">Contact</h3>
-        <p>Email: <a href="mailto:hosealifted@gmail.com">hosealifted@gmail.com</a></p>
-        <p>Links: <a href="https://github.com/yourprofile" target="_blank" rel="noopener">GitHub</a> • <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a></p>
-      </aside>
+    </div>
+  </header>
 
-      <section>
-        <div class="card" id="projects">
-          <h2 style="margin-top:0">Featured projects</h2>
-          <div class="projects">
-            <article class="project">
-              <h3>LiftChat (UI)</h3>
-              <p>WhatsApp-like responsive chat UI built with HTML/CSS/JS. Animated transitions and dark mode.</p>
-              <a class="btn" href="https://example.com/liftchat" target="_blank" rel="noopener">Live demo</a>
-            </article>
+  <main class="main">
 
-            <article class="project">
-              <h3>Animation Reel</h3>
-              <p>Short animated scenes and lip-sync tests created in OpenToonz. Exports to MP4 and GIF.</p>
-              <a class="btn" href="https://example.com/reel" target="_blank" rel="noopener">Watch</a>
-            </article>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
 
-            <article class="project">
-              <h3>Portfolio Site (This site)</h3>
-              <p>Static portfolio hosted on Firebase with fast load times and SEO optimizations.</p>
-            </article>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div class="hero-content">
+              <h1 data-aos="fade-up" data-aos-delay="200">Hello, I'm <span class="highlight">Hosea Lifted</span></h1>
+              <h2 data-aos="fade-up" data-aos-delay="300">Creative <span class="typed" data-typed-items="Cyber Security, Web Developer, Graphics Designer, UI/UX Designer, Animation/Cartoon Creator"></span></h2>
+              <p data-aos="fade-up" data-aos-delay="400">i am from FCT Nigeria, i'm a trained pen tester, software engineer and lots more.. 💻✔</p>
+              <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+                <a href="contact.html" class="btn btn-primary">Need any tech assistance</a>
+                <a href="contact.html" class="btn btn-outline">Need Website</a>
+              </div>
+              <div class="social-links" data-aos="fade-up" data-aos-delay="600">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-dribbble"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
+              <div class="image-wrapper">
+                <img src="assets/img/profile/profile-square-11.webp" alt="Sarah Mitchell" class="img-fluid">
+                <div class="floating-elements">
+                  <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
+                    <i class="bi bi-code-slash"></i>
+                    <span>Code</span>
+                  </div>
+                  <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
+                    <i class="bi bi-lightbulb"></i>
+                    <span>Ideas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="card" style="margin-top:12px">
-          <h2 style="margin-top:0">Skills & Tools</h2>
-          <p>HTML, CSS, JavaScript, React, OpenToonz, FFmpeg, Firebase, Git, basic cybersecurity.</p>
-        </div>
+      </div>
 
-        <div class="card" style="margin-top:12px">
-          <h2 style="margin-top:0">Contact me</h2>
-          <p>If you’d like to work together, email me at <a href="mailto:youremail@example.com">hosealifted@gmail.com</a> or fill the form:</p>
-          <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
-            <label style="display:block;margin-bottom:8px"><input name="name" placeholder="Your name" required style="width:100%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06)"></label>
-            <label style="display:block;margin-bottom:8px"><input name="email" placeholder="Your email" required style="width:100%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06)"></label>
-            <label style="display:block;margin-bottom:8px"><textarea name="message" placeholder="Message" required style="width:100%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06)"></textarea></label>
-            <button class="btn" type="submit">Send</button>
-          </form>
-        </div>
-      </section>
-    </section>
+    </section><!-- /Hero Section -->
 
-    <footer>
-      © <span id="year"></span> Hosea Liftes — Built with care. <span style="float:right">Made in Nigeria</span>
-    </footer>
   </main>
 
-  <script>document.getElementById('year').textContent=(new Date()).getFullYear();</script>
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">My porfolio</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-tiktok"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://hosealifted.vercel.app/">Hosea Lifted</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
