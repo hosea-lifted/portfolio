@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merry Christmas 🎄 | Hosea Lifted</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="snow"></canvas>
+
+<audio id="music" loop>
+  <source src="assets/christmas.mp3" type="audio/mpeg">
+</audio>
+
+<header class="top-bar">
+  <span>🎄 Christmas Celebration</span>
+  <button id="musicBtn">🔊 Music</button>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <h1>Merry Christmas 🎄</h1>
+    <p class="hero-text">
+      Welcome to my festive page! May this season bring joy and blessings to everyone.
+    </p>
+    <button class="primary" id="openSupport">Support Me 🎁</button>
+  </section>
+
+  <section class="profile-card">
+    <img src="assets/me.jpg" alt="Hosea Lifted" id="profile">
+    <h2>Hosea Lifted</h2>
+    <p>Web Developer | Creator</p>
+    <p>Click "Support Me" to see my account number and kindly assist for Christmas 🎄</p>
+    <button class="primary" id="supportProfile">Support Me 🎁</button>
+  </section>
+
+  <section class="actions">
+    <div class="action-box" id="supportBox">🎁 Support Me</div>
+    <div class="action-box" id="loveBox">❤️ Send Love</div>
+    <div class="action-box" id="shareBox">🔗 Share Page</div>
+    <div class="action-box" id="funBox">❄️ Fun Activity</div>
+  </section>
+
+  <img src="assets/santa.png" class="santa" alt="Santa">
+
+  <section class="extra-text">
+    <h3>My Christmas Wishlist 🎄</h3>
+    <ul>
+      <li>New coding project ideas</li>
+      <li>Joy, health, and blessings for everyone</li>
+      <li>Collaborations and inspiration</li>
+    </ul>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Hosea Lifted - Happy Holidays!
+  </footer>
+
+</main>
+
+<!-- SUPPORT MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <span class="close">&times;</span>
+    <h3>Support Hosea Lifted 🎄</h3>
+    <div class="bank">
+      <p><strong>Bank:</strong> moniepoint</p>
+      <p><strong>Account No:</strong> <span id="acc">7041893761</span> <button id="copy">Copy</button></p>
+      <p><strong>Name:</strong> Hosea Lifted</p>
+    </div>
+    <p>Kindly assist Lifted with any amount for Christmas 🎄 Thank you ❤️</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
